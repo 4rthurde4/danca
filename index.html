@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dança Viva - Aulas de Dança</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .depoimento_nome{
+         margin-left: 1.5%;
+        }
+        .header-social-links{
+            margin-right:1%;
+        }
+        .btn btn-dark{
+            margin-right:1%;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Dança Viva</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profissional.html">Conheça o Instrutor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://api.whatsapp.com/send/?phone=5549988872790&text=Quero+saber+mais+sobre+as+dan%C3%A7as!">WhatsApp</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-social-links">
+                <a href="https://www.facebook.com/">
+                    <img src="img/icon3.png" alt="icon">
+                </a>
+                
+            </div>
+            <div class="header-social-links">
+                <a href="https://www.instagram.com/4rthur7/?utm_source=qr&igsh=ZWJ4b3N3MXEyNGx2">
+                    <img src="img/icon1.png" alt="icon">
+                </a>
+                
+            </div>
+            <div class="header-social-links">
+                <a href="https://api.whatsapp.com/send/?phone=5549988872790&text=Quero+saber+mais+sobre+as+dan%C3%A7as!">
+                    <img src="img/icon2.png" alt="icon">
+                </a>
+            </div>
+        </div>
+        <!-- Link para abrir o modal -->
+        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalOrcamento">Orçamentos</a>
+    </ul>
+</div>
+</div>
+</nav>
+
+<!-- Modal de Orçamento -->
+<div class="modal fade" id="modalOrcamento" tabindex="-1" aria-labelledby="modalOrcamentoLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="modalOrcamentoLabel">Orçamentos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" id="telefone" required>
+            </div>
+            <div class="mb-3">
+                <label for="endereco" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="endereco" required>
+            </div>
+            <div class="mb-3">
+                <label for="cidade" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="cidade" required>
+            </div>
+            <div class="mb-3">
+                <label for="uf" class="form-label">UF</label>
+                <input type="text" class="form-control" id="uf" required>
+            </div>
+            <div class="mb-3">
+                <label for="data" class="form-label">Data desejada para o serviço</label>
+                <input type="date" class="form-control" id="data" required>
+            </div>
+            <div class="mb-3">
+                <label for="observacoes" class="form-label">Observações</label>
+                <textarea class="form-control" id="observacoes" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+    </nav>
+
+    <!-- Carrossel de Imagens -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/ballet.jpg" class="d-block w-100" alt="Ballet"> 
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ballet</h5>
+                    <p>Descubra a elegância do Ballet clássico.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/salsa.jpg" class="d-block w-100" alt="Salsa">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Salsa</h5>
+                    <p>Sinta a energia da Salsa.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/hiphop.jpg" class="d-block w-100" alt="Hip-Hop">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Hip-Hop</h5>
+                    <p>Dance ao ritmo do Hip-Hop.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Seção de Serviços -->
+    <div id="servicos" class="card-group mt-5">
+        <div class="card" style="width: 18rem;">
+            <img src="img/balletcar.jpg" class="card-img-top" alt="Ballet">
+            <div class="card-body">
+                <h5 class="card-title">Aulas de Ballet</h5>
+                <p class="card-text">Descubra a elegância do Ballet clássico.</p>
+                <a href="ballet.html" class="btn btn-dark">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="img/salsaservice.jpg" class="card-img-top" alt="Salsa">
+            <div class="card-body">
+                <h5 class="card-title">Aulas de Salsa</h5>
+                <p class="card-text">Sinta a energia da Salsa.</p>
+                <a href="salsa.html" class="btn btn-dark">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="img/hiphopcar.jpeg" class="card-img-top" alt="Hip-Hop">
+            <div class="card-body">
+                <h5 class="card-title">Aulas de Hip-Hop</h5>
+                <p class="card-text">Dance ao ritmo do Hip-Hop.</p>
+                <a href="hiphop.html" class="btn btn-dark">Saiba Mais</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção Sobre a Empresa -->
+    <div id="sobre" class="mt-5 p-4 bg-light">
+        <h2>Sobre Nós</h2>
+        <p>A Dança Viva é uma escola de dança dedicada a ensinar e inspirar pessoas de todas as idades. Nossa missão é proporcionar aulas de alta qualidade, em um ambiente acolhedor e divertido. Oferecemos uma variedade de estilos de dança, desde o clássico Ballet até os ritmos modernos do Hip-Hop.</p>
+    </div>
+
+    <!-- Seção de Contato -->
+    <div id="contato" class="mt-5 p-4 bg-light">
+        <h2>Contato</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Enviar</button>
+        </form>
+        <p class="mt-3">Telefone: (99) 99999-9999</p>
+        <p>Email: contato@dancaviva.com</p>
+    </div>
+
+    <!-- Seção de Depoimentos -->
+
+    <div id="depoimentos" class="mt-5 p-4 bg-light">
+        <h2>Depoimentos</h2>
+            <br>
+        <div class="card text-black bg-light mb-3" style="max-width: 70rem;">
+            <div class="card-header"> 
+                <img src="img/profile.jpg" class="card-img-left" alt="Salsa" style="width: 3rem; border-radius: 50%; display:inline">
+                <span class="depoimento_nome">Maria Souza</span> 
+            </div>
+            <div class="card-body">
+              <p class="card-text">"As aulas de dança são incríveis! Eu me sinto mais confiante e cheia de energia."</p>
+            </div>
+          </div>
+          <br>
+          <div class="card text-black bg-light mb-3" style="max-width: 70rem;">
+            <div class="card-header"> 
+                <img src="img/profile3.webp" class="card-img-left" alt="Salsa" style="width: 3rem; border-radius: 50%; display:inline">
+                <span class="depoimento_nome">Ms. White</span> 
+            </div>
+            <div class="card-body">
+              <p class="card-text">"I really liked the relaxation of the classes."</p>
+            </div>
+          </div>
+          <br>
+          <div class="card text-black bg-light mb-3" style="max-width: 70rem;">
+            <div class="card-header"> 
+                <img src="img/profile1.png" class="card-img-left" alt="Salsa" style="width: 3rem; border-radius: 50%; display:inline">
+                <span class="depoimento_nome">Dona Maria</span> 
+            </div>
+            <div class="card-body">
+              <p class="card-text">"Mtoo bom! Adoooro o prof Arthur!"</p>
+            </div>
+          </div>
+          <br>
+          <div class="card text-black bg-light mb-3" style="max-width: 70rem;">
+            <div class="card-header"> 
+                <img src="img/profile.jpg" class="card-img-left" alt="Salsa" style="width: 3rem; border-radius: 50%; display:inline">
+                <span class="depoimento_nome">Smith</span> 
+            </div>
+            <div class="card-body">
+              <p class="card-text">"Aula de ballet é topzera!!"</p>
+            </div>
+          </div>
+          <br>
+          <div class="card text-black bg-light mb-3" style="max-width: 70rem;">
+            <div class="card-header"> 
+                <img src="img/profile2.png" class="card-img-left" alt="Salsa" style="width: 3rem; border-radius: 50%; display:inline">
+                <span class="depoimento_nome">Fulano de Tal</span> 
+            </div>
+            <div class="card-body">
+              <p class="card-text">"Bah, muito show. Só falta incrementar zumba!"</p>
+            </div>
+          </div>
+
+          
+
+        <!-- Adicione mais depoimentos conforme necessário -->
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="mt-5 p-4 bg-dark text-white text-center">
+        <p>&copy; 2024 Dança Viva - Desenvolvido por Arthur de Araujo</p>
+    </footer>
+
+</body>
+</html>
